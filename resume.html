@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        font-family: "Merriweather", sans-serif;
+        margin: 0;
+        padding: 20px;
+        height: 100%;
+      }
+
+      ul {
+        padding: 0;
+        padding-left: 30px;
+        padding-top: 10px;
+        margin: 0;
+      }
+
+      .heading {
+        display: flex;
+        width: 100%;
+        margin-bottom: 20px;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .heading-name h1 {
+        margin: 0;
+      }
+
+      .heading-name h2 {
+        color: rgb(32, 121, 199);
+        margin: 0;
+      }
+
+      .heading-details p {
+        margin: 0;
+        padding-top: 2px;
+        padding-bottom: 2px;
+      }
+
+      .details {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      .column {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .column-right {
+        padding-left: 20px;
+      }
+
+      .column-title {
+        color: rgb(32, 121, 199);
+        text-transform: uppercase;
+        margin-top: 20px;
+        margin-bottom: 15px;
+      }
+
+      .languages {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .language-details {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .language-details-right {
+        margin-left: 20px;
+      }
+
+      .work-experience {
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+
+      .work-experience h3 {
+        margin: 0;
+        margin-top: 10px;
+      }
+
+      .work-experience p {
+        margin: 0;
+      }
+
+      .work-experience-duration {
+        margin-bottom: 10px;
+      }
+    </style>
+    <title>Page Title</title>
+  </head>
+  <body>
+    <div class="heading">
+      <div class="heading-name">
+        <h1>Michael Archer</h1>
+        <h2>Software Engineer</h2>
+      </div>
+      <div class="heading-details">
+        <p><small>(762) 383-9120</small></p>
+        <p><small>mikearche@gmail.com</small></p>
+        <p><small>github.com/mikearche</small></p>
+      </div>
+    </div>
+    <div class="details">
+      <div class="column">
+        <h4 class="column-title">Experience</h4>
+        <div class="work-experience">
+          <h3>
+            <strong>Alaska Airlines</strong>, Remote — <i>Software Engineer</i>
+          </h3>
+          <small class="work-experience-duration">October 2022 - Present</small>
+          <ul>
+            <li>
+              <small>
+                Developed modern micro front-end applications using Svelte to
+                deliver highly performant and responsive user interfaces
+              </small>
+            </li>
+            <li>
+              <small>
+                Implemented a robust design system using Storybook to ensure
+                consistency across all applications
+              </small>
+            </li>
+            <li>
+              <small>
+                Utilized Azure Functions to create a backend multiple REST API
+                services
+              </small>
+            </li>
+          </ul>
+        </div>
+        <div class="work-experience">
+          <h3><strong>Abound</strong>, Remote — <i>Platform Engineer</i></h3>
+          <small class="work-experience-duration"
+            >October 2020 - June 2022</small
+          >
+          <ul>
+            <li>
+              <small>
+                Migrated code infrastructure to AWS SAM to fully integrate
+                serverless architecture
+              </small>
+            </li>
+            <li>
+              <small>
+                Introduced TypeScript type enforcement into the core API product
+              </small>
+            </li>
+            <li>
+              <small>
+                Implemented a large sweeping testing suite by creating
+                end-to-end, unit, and integration tests
+              </small>
+            </li>
+          </ul>
+        </div>
+        <div class="work-experience">
+          <h3><strong>Microsoft</strong>, Remote — <i>Software Engineer</i></h3>
+          <small class="work-experience-duration"
+            >February 2020 - September 2020</small
+          >
+          <ul>
+            <li>
+              <small>
+                Redesigned primary Xbox application in React Native while
+                maintaining accessibility, and localization standards
+              </small>
+            </li>
+            <li>
+              <small>
+                Developed shared reusable packages in TypeScript for internal,
+                and external development teams to consume
+              </small>
+            </li>
+          </ul>
+        </div>
+        <div class="work-experience">
+          <h3>
+            <strong>Boeing</strong>, Seattle WA — <i>Full Stack Developer</i>
+          </h3>
+          <small class="work-experience-duration"
+            >January 2019 - February 2020</small
+          >
+          <ul>
+            <li>
+              <small>
+                Designed and implemented a system for managing a robust library
+                of analytics, and data visualizations
+              </small>
+            </li>
+            <li>
+              <small>
+                Utilized Test Driven Development with Enzyme and Mocha to create
+                powerful, high quality user interfaces
+              </small>
+            </li>
+          </ul>
+        </div>
+        <div class="work-experience">
+          <h3>
+            <strong>MealViewer</strong>, Augusta GA — <i>Junior Engineer</i>
+          </h3>
+          <small class="work-experience-duration"
+            >September 2015 - December 2018</small
+          >
+          <ul>
+            <li>
+              <small>
+                Collaborated on a complete rewrite, and redesign on MealViewer's
+                primary parent/student menu app in both React and React Native
+              </small>
+            </li>
+            <li>
+              <small>
+                Created release pipelines, and deployment processes for projects
+                using Azure Dev Ops
+              </small>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="column column-right">
+        <h4 class="column-title">Open Source Contributions</h4>
+        <div class="work-experience">
+          <h3><strong>Google Clasp</strong> — <i>TypeScript</i></h3>
+          <small class="work-experience-duration">
+            https://github.com/google/clasp
+          </small>
+          <ul>
+            <li>
+              <small>
+                Located and fixed a bug preventing Windows users from logging
+                out
+              </small>
+            </li>
+            <li>
+              <small>Fixed numerous tests not working on Windows devices</small>
+            </li>
+
+            <li>
+              <small>
+                Discovered and found issues in documentation for running the
+                project locally
+              </small>
+            </li>
+          </ul>
+        </div>
+        <h4 class="column-title">Personal Projects</h4>
+        <div class="work-experience">
+          <h3><strong>TeamWiki</strong> — <i>Javascript / React</i></h3>
+          <small class="work-experience-duration">
+            https://github.com/mikearche/team-wiki
+          </small>
+          <ul>
+            <li>
+              <small
+                >A completely data driven approach to creating wiki pages</small
+              >
+            </li>
+
+            <li>
+              <small>
+                Allows users to easily create robust wiki pages without any
+                knowledge of HTML, CSS, or JavaScript
+              </small>
+            </li>
+            <li>
+              <small>
+                Implemented theming to enable users to follow their desired
+                color scheme
+              </small>
+            </li>
+          </ul>
+        </div>
+        <div class="languages">
+          <div class="language-details">
+            <h4 class="column-title">Languages</h4>
+            <ul>
+              <li>TypeScript</li>
+              <li>JavaScript</li>
+              <li>C#</li>
+              <li>Java</li>
+            </ul>
+          </div>
+          <div class="language-details language-details-right">
+            <h4 class="column-title">Frameworks</h4>
+            <ul>
+              <li>React</li>
+              <li>React Native</li>
+              <li>Svelte</li>
+              <li>.NET</li>
+            </ul>
+          </div>
+        </div>
+        <h4 class="column-title">Education</h4>
+        <div class="work-experience">
+          <h3>
+            <strong>Augusta University</strong>, Augusta GA —
+            <i>B.S. in Computer Science</i>
+          </h3>
+          <small class="work-experience-duration"
+            >August 2012 - April 2017</small
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
