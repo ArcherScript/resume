@@ -21,7 +21,6 @@
       .heading {
         display: flex;
         width: 100%;
-        margin-bottom: 20px;
         flex-direction: row;
         justify-content: space-between;
       }
@@ -30,7 +29,7 @@
         margin: 0;
       }
 
-      .heading-name h2 {
+      .heading-name h4 {
         color: rgb(32, 121, 199);
         margin: 0;
       }
@@ -60,22 +59,8 @@
       .column-title {
         color: rgb(32, 121, 199);
         text-transform: uppercase;
-        margin-top: 20px;
+        margin-top: 15px;
         margin-bottom: 15px;
-      }
-
-      .languages {
-        display: flex;
-        flex-direction: row;
-      }
-
-      .language-details {
-        display: flex;
-        flex-direction: column;
-      }
-
-      .language-details-right {
-        margin-left: 20px;
       }
 
       .work-experience {
@@ -85,7 +70,6 @@
 
       .work-experience h3 {
         margin: 0;
-        margin-top: 10px;
       }
 
       .work-experience p {
@@ -95,18 +79,49 @@
       .work-experience-duration {
         margin-bottom: 10px;
       }
+
+      .border {
+        border-bottom: 2px solid;
+        width: 92vw;
+        margin-top: 10px;
+        margin-bottom: 0;
+      }
+
+      .skills {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+      }
     </style>
-    <title>Page Title</title>
   </head>
   <body>
     <div class="heading">
       <div class="heading-name">
         <h1>Beatrice Archer</h1>
-        <h2>Software Engineer</h2>
+        <h4><small>bea@a4r.dev</small></h4>
+        <h4><small>https://github.com/archerscript</small></h4>
+        <div class="border"></div>
       </div>
-      <div class="heading-details">
-        <p><small>bea@a4r.dev</small></p>
-        <p><small>github.com/archerscript</small></p>
+    </div>
+    <h4 class="column-title">Skills</h4>
+    <div class="skills">
+      <div>
+        <strong>
+          <small> Languages: </small>
+        </strong>
+        <small>TypeScript, JavaScript, C#, Rust, Java</small>
+      </div>
+      <div>
+        <strong>
+          <small> Technologies: </small>
+        </strong>
+        <small>Svelte, React, React Native, .NET, Node.js, Vitest, Jest</small>
+      </div>
+      <div>
+        <strong>
+          <small> DevOps: </small>
+        </strong>
+        <small>AWS, AWS CDK, Azure, Azure Dev Ops, ARM</small>
       </div>
     </div>
     <div class="details">
@@ -256,6 +271,26 @@
             </li>
           </ul>
         </div>
+        <div class="work-experience">
+          <h3><strong>SumoLogger.js</strong> — <i>Node.js</i></h3>
+          <small class="work-experience-duration">
+            https://npmjs.com/package/sumo-logger.js
+          </small>
+          <ul>
+            <li>
+              <small>
+                A zero dependency Node.js package to easily send logs to Sumo
+                Logic
+              </small>
+            </li>
+            <li>
+              <small>
+                Created as a solution to an unmaintained package with several
+                security vulnerabilities
+              </small>
+            </li>
+          </ul>
+        </div>
         <h4 class="column-title">Open Source Contributions</h4>
         <div class="work-experience">
           <h3><strong>Google Clasp</strong> — <i>TypeScript</i></h3>
@@ -280,26 +315,6 @@
               </small>
             </li>
           </ul>
-        </div>
-        <div class="languages">
-          <div class="language-details">
-            <h4 class="column-title">Languages</h4>
-            <ul>
-              <li>TypeScript</li>
-              <li>JavaScript</li>
-              <li>C#</li>
-              <li>Java</li>
-            </ul>
-          </div>
-          <div class="language-details language-details-right">
-            <h4 class="column-title">Frameworks</h4>
-            <ul>
-              <li>React</li>
-              <li>React Native</li>
-              <li>Svelte</li>
-              <li>.NET</li>
-            </ul>
-          </div>
         </div>
         <h4 class="column-title">Education</h4>
         <div class="work-experience">
